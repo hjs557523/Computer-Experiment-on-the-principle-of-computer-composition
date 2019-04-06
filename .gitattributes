@@ -1,4 +1,7 @@
-*.lst linguist-language=Verilog
-*.xmsgs linguist-language=Verilog
-*.lso linguist-language=Verilog
-*.xst linguist-language=Verilog
+*.lst linguist-language=verilog
+*.xmsgs linguist-language=verilog
+*.lso linguist-language=verilog
+*.xst linguist-language=verilog
+*.csv linguist-language=verilog
+*.ncd linguist-language=verilog
+*.v linguist-language=verilog
