@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/FPGA/super_adder/First_M.xst" -ofn "D:/FPGA/super_adder/First_M.syr" 

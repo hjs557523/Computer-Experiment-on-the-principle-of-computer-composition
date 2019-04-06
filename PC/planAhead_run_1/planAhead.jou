@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed May 16 13:19:42 2018
+# Process ID: 5132
+# Log file: D:/FPGA/PC/planAhead_run_1/planAhead.log
+# Journal file: D:/FPGA/PC/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/FPGA/PC/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

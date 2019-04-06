@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/FPGA/R_I_J_instruction/TOP_RIJ_CPU.xst" -ofn "D:/FPGA/R_I_J_instruction/TOP_RIJ_CPU.syr" 
+xst -intstyle ise -ifn "D:/FPGA/R_I_J_instruction/TOP_RIJ_CPU.xst" -ofn "D:/FPGA/R_I_J_instruction/TOP_RIJ_CPU.syr" 

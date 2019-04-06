@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/FPGA/PC/pc.xst" -ofn "D:/FPGA/PC/pc.syr" 

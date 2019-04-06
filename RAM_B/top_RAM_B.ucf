@@ -1,0 +1,21 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Clk" LOC = C9;
+NET "LED[4]" LOC = M11;
+NET "LED[3]" LOC = V15;
+NET "LED[2]" LOC = U15;
+NET "LED[1]" LOC = V16;
+NET "LED[0]" LOC = U16;
+NET "Mem_Addr[7]" LOC = U8;
+NET "Mem_Addr[6]" LOC = N8;
+NET "Mem_Addr[5]" LOC = M8;
+NET "Mem_Addr[4]" LOC = V9;
+NET "Mem_Addr[2]" LOC = T10;
+NET "Mem_Write" LOC = C4;
+NET "Mem_Addr[3]" LOC = T9;
+NET "C[1]" LOC = T5;
+NET "C[0]" LOC = V8;
+NET "LED[7]" LOC = T11;
+NET "LED[5]" LOC = N11;
+NET "LED[6]" LOC = R11;

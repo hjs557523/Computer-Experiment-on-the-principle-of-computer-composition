@@ -1,0 +1,115 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\ise\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml Top_LED.twx Top_LED.ncd -o Top_LED.twr Top_LED.pcf -ucf
+Top_LED.ucf
+
+Design file:              Top_LED.ncd
+Physical constraint file: Top_LED.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+rst         |    8.163(F)|      SLOW  |   -0.749(F)|      FAST  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED<0>      |        25.089(R)|      SLOW  |         7.426(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        23.206(F)|      SLOW  |         6.891(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<1>      |        23.163(R)|      SLOW  |         7.300(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        21.052(F)|      SLOW  |         7.213(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<2>      |        22.953(R)|      SLOW  |         7.164(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        20.435(F)|      SLOW  |         6.988(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<3>      |        22.169(R)|      SLOW  |         7.115(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        19.596(F)|      SLOW  |         6.701(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<4>      |        21.610(R)|      SLOW  |         7.488(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        19.110(F)|      SLOW  |         6.451(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<5>      |        21.531(R)|      SLOW  |         7.350(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        19.090(F)|      SLOW  |         6.475(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<6>      |        23.012(R)|      SLOW  |         7.511(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        21.217(F)|      SLOW  |         6.722(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<7>      |        21.983(R)|      SLOW  |         7.432(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        19.414(F)|      SLOW  |         6.445(F)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |    1.777|   14.470|   12.322|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+SW<0>          |LED<0>         |   10.999|
+SW<0>          |LED<1>         |    8.844|
+SW<0>          |LED<2>         |    9.419|
+SW<0>          |LED<3>         |    9.600|
+SW<0>          |LED<4>         |    8.246|
+SW<0>          |LED<5>         |    8.249|
+SW<0>          |LED<6>         |    8.734|
+SW<0>          |LED<7>         |    8.917|
+SW<1>          |LED<0>         |   11.225|
+SW<1>          |LED<1>         |    8.724|
+SW<1>          |LED<2>         |    9.392|
+SW<1>          |LED<3>         |    9.401|
+SW<1>          |LED<4>         |    8.658|
+SW<1>          |LED<5>         |    8.631|
+SW<1>          |LED<6>         |    9.744|
+SW<1>          |LED<7>         |    9.826|
+SW<2>          |LED<0>         |   11.445|
+SW<2>          |LED<1>         |    8.616|
+SW<2>          |LED<2>         |    9.273|
+SW<2>          |LED<3>         |    9.651|
+SW<2>          |LED<4>         |    8.723|
+SW<2>          |LED<5>         |    9.103|
+SW<2>          |LED<6>         |    9.143|
+SW<2>          |LED<7>         |    8.764|
+---------------+---------------+---------+
+
+
+Analysis completed Sat May 26 10:12:48 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 279 MB
+
+
+

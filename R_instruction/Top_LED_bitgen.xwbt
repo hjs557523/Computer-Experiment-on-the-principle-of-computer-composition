@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\FPGA\R_instruction\Top_LED.ncd
+OUTFILE=D:\FPGA\R_instruction\Top_LED.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\FPGA\R_instruction
+LICENSE=WebPack
+USER_INFO=__0_0_0

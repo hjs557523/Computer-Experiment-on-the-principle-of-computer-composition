@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed May 16 16:46:25 2018
+# Process ID: 11736
+# Log file: D:/FPGA/R_instruction/planAhead_run_1/planAhead.log
+# Journal file: D:/FPGA/R_instruction/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/FPGA/R_instruction/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin T11 [get_ports {LED[7]}]
+endgroup
+startgroup
+set_property package_pin R11 [get_ports {LED[6]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {LED[5]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {LED[4]}]
+endgroup
+startgroup
+set_property package_pin V15 [get_ports {LED[3]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {LED[2]}]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports {LED[1]}]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports {LED[0]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {SW[2]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {SW[1]}]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports {SW[0]}]
+endgroup
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports rst]
+endgroup
+save_constraints

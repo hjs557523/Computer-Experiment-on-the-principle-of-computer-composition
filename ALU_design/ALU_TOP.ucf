@@ -1,0 +1,20 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "LED[7]" LOC = T11;
+NET "LED[6]" LOC = R11;
+NET "LED[5]" LOC = N11;
+NET "LED[4]" LOC = M11;
+NET "LED[3]" LOC = V15;
+NET "LED[2]" LOC = U15;
+NET "LED[1]" LOC = V16;
+NET "LED[0]" LOC = U16;
+NET "AB_SW[2]" LOC = V9;
+NET "AB_SW[1]" LOC = T9;
+NET "AB_SW[0]" LOC = T10;
+NET "ALU_OP[2]" LOC = U8;
+NET "ALU_OP[1]" LOC = N8;
+NET "ALU_OP[0]" LOC = M8;
+NET "F_LED_SW[1]" LOC = C4;
+NET "F_LED_SW[0]" LOC = V8;
+NET "F_LED_SW[2]" LOC = T5;

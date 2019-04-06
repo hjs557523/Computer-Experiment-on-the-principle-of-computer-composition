@@ -1,0 +1,341 @@
+Messages
+=========================
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version 9.1.9 of January 19, 2013
+Copyright 1990-2012, James R. Larus.
+All Rights Reserved.
+SPIM is distributed under a BSD license.
+See the file README for a full copyright notice.
+D:\FPGA\MIPS\R_CPU_Test.asm successfully loaded
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version 9.1.9 of January 19, 2013
+Copyright 1990-2012, James R. Larus.
+All Rights Reserved.
+SPIM is distributed under a BSD license.
+See the file README for a full copyright notice.
+D:\FPGA\MIPS\R_CPU_Test.asm successfully loaded
+Exception occurred at PC=0x00400054
+  Arithmetic overflow
+Attempt to execute non-instruction at 0x80000180
+Registers cleared.
+
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version 9.1.9 of January 19, 2013
+Copyright 1990-2012, James R. Larus.
+All Rights Reserved.
+SPIM is distributed under a BSD license.
+See the file README for a full copyright notice.
+Registers cleared.
+
+Registers cleared.
+
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version 9.1.9 of January 19, 2013
+Copyright 1990-2012, James R. Larus.
+All Rights Reserved.
+SPIM is distributed under a BSD license.
+See the file README for a full copyright notice.
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version 9.1.9 of January 19, 2013
+Copyright 1990-2012, James R. Larus.
+All Rights Reserved.
+SPIM is distributed under a BSD license.
+See the file README for a full copyright notice.
+D:\FPGA\MIPS\R_CPU_Test.asm successfully loaded
+Exception occurred at PC=0x00400054
+  Arithmetic overflow
+Attempt to execute non-instruction at 0x80000180
+
+
+Registers
+=========================
+ PC      = 80000180   EPC     = 00400054   Cause   = 00000030   BadVAddr= 00000000
+ Status  = 3000ff12   HI      = 00000000   LO      = 00000000
+                                 General Registers
+R0  (r0) = 00000000  R8  (t0) = 00007000  R16 (s0) = fffffff0  R24 (t8) = 00000000
+R1  (at) = ffffffff  R9  (t1) = ffff8fff  R17 (s1) = 00000010  R25 (t9) = 00000000
+R2  (v0) = 00000001  R10 (t2) = ffff8ffe  R18 (s2) = 70000000  R26 (k0) = 00000000
+R3  (v1) = 00000002  R11 (t3) = 00006ff2  R19 (s3) = 00020000  R27 (k1) = 00000000
+R4  (a0) = 00000003  R12 (t4) = ffff900e  R20 (s4) = 80000000  R28 (gp) = 00000000
+R5  (a1) = 00000005  R13 (t5) = ffff800e  R21 (s5) = 00000000  R29 (sp) = 7ffff364
+R6  (a2) = 00000007  R14 (t6) = ffff9fff  R22 (s6) = 00000000  R30 (s8) = 00000000
+R7  (a3) = 0000000e  R15 (t7) = 0000000f  R23 (s7) = 00000000  R31 (ra) = 00000000
+
+ FIR    = 00009800    FCSR    = 00000000    FCCR   = 00000000   FEXR    = 00000000
+ FENR   = 00000000
+                              Double Floating Point Registers
+FP0 =00000000,00000000 FP8 =00000000,00000000 FP16=00000000,00000000 FP24=00000000,00000000
+FP2 =00000000,00000000 FP10=00000000,00000000 FP18=00000000,00000000 FP26=00000000,00000000
+FP4 =00000000,00000000 FP12=00000000,00000000 FP20=00000000,00000000 FP28=00000000,00000000
+FP6 =00000000,00000000 FP14=00000000,00000000 FP22=00000000,00000000 FP30=00000000,00000000
+                              Single Floating Point Registers
+FP0 =00000000 FP8 =00000000 FP16=00000000 FP24=00000000
+FP1 =00000000 FP9 =00000000 FP17=00000000 FP25=00000000
+FP2 =00000000 FP10=00000000 FP18=00000000 FP26=00000000
+FP3 =00000000 FP11=00000000 FP19=00000000 FP27=00000000
+FP4 =00000000 FP12=00000000 FP20=00000000 FP28=00000000
+FP5 =00000000 FP13=00000000 FP21=00000000 FP29=00000000
+FP6 =00000000 FP14=00000000 FP22=00000000 FP30=00000000
+FP7 =00000000 FP15=00000000 FP23=00000000 FP31=00000000
+
+
+Console
+=========================
+
+
+Text Segment
+=========================
+[0x00400000]        0x00000827  nor $1, $0, $0                  ; 1: nor $1, $0,$0;          #$1=FFFF_FFFF
+[0x00400004]        0x0001102b  sltu $2, $0, $1                 ; 2: sltu $2, $0, $1;          #$2=0000_0001
+[0x00400008]        0x00421820  add $3, $2, $2                  ; 3: add $3, $2, $2;          #$3=0000_0002
+[0x0040000c]        0x00622020  add $4, $3, $2                  ; 4: add $4, $3, $2;          #$4=0000_0003
+[0x00400010]        0x00832820  add $5, $4, $3                  ; 5: add $5, $4, $3;          #$5=0000_0005
+[0x00400014]        0x00a33020  add $6, $5, $3                  ; 6: add $6, $5, $3;          #$6=0000_0007
+[0x00400018]        0x00463804  sllv $7, $6, $2                 ; 7: sllv $7, $6, $2;          #$7=0000_000E
+[0x0040001c]        0x00a64820  add $9, $5, $6                  ; 8: add $9, $5, $6;          #$9=0000_000C
+[0x00400020]        0x01264004  sllv $8, $6, $9                 ; 9: sllv $8, $6, $9;          #$8=0000_7000
+[0x00400024]        0x00284826  xor $9, $1, $8                  ; 10: xor $9, $1, $8;          #$9=FFFF_8FFF
+[0x00400028]        0x01215020  add $10, $9, $1                 ; 11: add $10, $9, $1;         #$10=FFFF_8FFE
+[0x0040002c]        0x01075822  sub $11, $8, $7                 ; 12: sub $11, $8, $7;         #$11=0000_6FF2
+[0x00400030]        0x00e86022  sub $12, $7, $8                 ; 13: sub $12, $7, $8;          #$12=FFFF_900E
+[0x00400034]        0x012c6824  and $13, $9, $12                ; 14: and $13, $9, $12;        #$13=FFFF_800E
+[0x00400038]        0x012c7025  or $14, $9, $12                 ; 15: or $14, $9, $12;          #$14=FFFF_9FFF
+[0x0040003c]        0x00c77825  or $15, $6, $7                  ; 16: or $15, $6, $7;          #$15=0000_000F
+[0x00400040]        0x00c78027  nor $16, $6, $7                 ; 17: nor $16, $6, $7;         #$16=FFFF_FFF0
+[0x00400044]        0x00e38820  add $17, $7, $3                 ; 18: add $17, $7, $3;        #$17=0000_0010
+[0x00400048]        0x02289004  sllv $18, $8, $17               ; 19: sllv  $18, $8, $17;     #$18=7000_0000
+[0x0040004c]        0x02239804  sllv $19, $3, $17               ; 20: sllv  $19, $3, $17;     #$19=0002_0000
+[0x00400050]        0x00f3a004  sllv $20, $19, $7               ; 21: sllv $20, $19, $7;      #$20=8000_0000
+[0x00400054]        0x0281a820  add $21, $20, $1                ; 22: add  $21, $20, $1;      #$21=7FFF_FFFF
+[0x00400058]        0x0255b025  or $22, $18, $21                ; 23: or $22, $18, $21;       #$22=7FFF_FFFF
+[0x0040005c]        0x0296b820  add $23, $20, $22               ; 24: add  $23, $20, $22;     #$23=FFFF_FFFF
+[0x00400060]        0x0296c022  sub $24, $20, $22               ; 25: sub $24, $20, $22;      #$24=0000_0001
+[0x00400064]        0x02d4c822  sub $25, $22, $20               ; 26: sub $25, $22, $20;      #$25=FFFF_FFFF
+[0x00400068]        0x0241d026  xor $26, $18, $1                ; 27: xor $26, $18, $1;       #$26=8FFF_FFFF
+[0x0040006c]        0x02d4d82b  sltu $27, $22, $20              ; 28: sltu $27, $22, $20;     #$27=0000_0001
+[0x00400070]        0x0354e02b  sltu $28, $26, $20              ; 29: sltu $28, $26, $20;     #$28=0000_0000
+[0x00400074]        0x02c2e820  add $29, $22, $2                ; 30: add $29, $22, $2;       #$29=8000_0000
+[0x00400078]        0x0282f022  sub $30, $20, $2                ; 31: sub $30, $20, $2;       #$30=7FFF_FFFF
+[0x0040007c]        0x017af820  add $31, $11, $26               ; 32: add $31, $11, $26;      #$30=9000_6FF1
+
+        KERNEL
+
+
+Data Segment
+=========================
+        DATA
+[0x10000000]...[0x10040000]        0x00000000
+
+        STACK
+[0x7ffff364]                        0x00000001  0x7ffff42e  0x00000000
+[0x7ffff370]                        0x7fffffe1  0x7fffffbb  0x7fffff5c  0x7fffff25
+[0x7ffff380]                        0x7ffffee9  0x7ffffeb8  0x7ffffe9b  0x7ffffe77
+[0x7ffff390]                        0x7ffffe46  0x7ffffe1e  0x7ffffe11  0x7ffffdfc
+[0x7ffff3a0]                        0x7ffffdd5  0x7ffffdbb  0x7ffffd92  0x7ffffd74
+[0x7ffff3b0]                        0x7ffffd65  0x7ffffd30  0x7ffffd12  0x7ffffcfb
+[0x7ffff3c0]                        0x7ffffced  0x7ffff79d  0x7ffff75f  0x7ffff744
+[0x7ffff3d0]                        0x7ffff727  0x7ffff6df  0x7ffff6cd  0x7ffff6b5
+[0x7ffff3e0]                        0x7ffff69a  0x7ffff676  0x7ffff64d  0x7ffff62f
+[0x7ffff3f0]                        0x7ffff5a4  0x7ffff58d  0x7ffff565  0x7ffff551
+[0x7ffff400]                        0x7ffff542  0x7ffff52c  0x7ffff506  0x7ffff4e1
+[0x7ffff410]                        0x7ffff4c6  0x7ffff49c  0x7ffff48e  0x7ffff474
+[0x7ffff420]                        0x7ffff462  0x7ffff445  0x00000000  0x45220000
+[0x7ffff430]                        0x63705c3a  0x6d697073  0x7363705c  0x2e6d6970
+[0x7ffff440]                        0x22657865  0x4c495800  0x5f584e49  0x5f524f46
+[0x7ffff450]                        0x49544c41  0x4f5f4d55  0x52524556  0x3d454449
+[0x7ffff460]                        0x69770020  0x7269646e  0x5c3a433d  0x646e6957
+[0x7ffff470]                        0x0073776f  0x52455355  0x464f5250  0x3d454c49
+[0x7ffff480]                        0x555c3a43  0x73726573  0x7573615c  0x53550073
+[0x7ffff490]                        0x414e5245  0x613d454d  0x00737573  0x52455355
+[0x7ffff4a0]                        0x414d4f44  0x525f4e49  0x494d414f  0x5250474e
+[0x7ffff4b0]                        0x4c49464f  0x45443d45  0x4f544b53  0x44312d50
+[0x7ffff4c0]                        0x43474b30  0x5355004b  0x4f445245  0x4e49414d
+[0x7ffff4d0]                        0x5345443d  0x504f544b  0x3044312d  0x4b43474b
+[0x7ffff4e0]                        0x504d5400  0x5c3a433d  0x72657355  0x73615c73
+[0x7ffff4f0]                        0x415c7375  0x61447070  0x4c5c6174  0x6c61636f
+[0x7ffff500]                        0x6d65545c  0x45540070  0x433d504d  0x73555c3a
+[0x7ffff510]                        0x5c737265  0x73757361  0x7070415c  0x61746144
+[0x7ffff520]                        0x636f4c5c  0x545c6c61  0x00706d65  0x74737953
+[0x7ffff530]                        0x6f526d65  0x433d746f  0x69575c3a  0x776f646e
+[0x7ffff540]                        0x79530073  0x6d657473  0x76697244  0x3a433d65
+[0x7ffff550]                        0x53455300  0x4e4f4953  0x454d414e  0x6e6f433d
+[0x7ffff560]                        0x656c6f73  0x41555100  0x53555452  0x4f4f525f
+[0x7ffff570]                        0x52494454  0x5c3a633d  0x65746c61  0x395c6172
+[0x7ffff580]                        0x31707331  0x6175715c  0x73757472  0x42555000
+[0x7ffff590]                        0x3d43494c  0x555c3a43  0x73726573  0x6275505c
+[0x7ffff5a0]                        0x0063696c  0x6f4d5350  0x656c7564  0x68746150
+[0x7ffff5b0]                        0x5c3a433d  0x646e6957  0x5c73776f  0x74737973
+[0x7ffff5c0]                        0x32336d65  0x6e69575c  0x73776f64  0x65776f50
+[0x7ffff5d0]                        0x65685372  0x765c6c6c  0x5c302e31  0x75646f4d
+[0x7ffff5e0]                        0x5c73656c  0x5c3a433b  0x676f7250  0x206d6172
+[0x7ffff5f0]                        0x656c6946  0x78282073  0x5c293638  0x7263694d
+[0x7ffff600]                        0x666f736f  0x51532074  0x6553204c  0x72657672
+[0x7ffff610]                        0x3031315c  0x6f6f545c  0x505c736c  0x7265776f
+[0x7ffff620]                        0x6c656853  0x6f4d5c6c  0x656c7564  0x50005c73
+[0x7ffff630]                        0x72676f72  0x36576d61  0x3d323334  0x505c3a43
+[0x7ffff640]                        0x72676f72  0x46206d61  0x73656c69  0x6f725000
+[0x7ffff650]                        0x6d617267  0x656c6946  0x38782873  0x433d2936
+[0x7ffff660]                        0x72505c3a  0x6172676f  0x6946206d  0x2073656c
+[0x7ffff670]                        0x36387828  0x72500029  0x6172676f  0x6c69466d
+[0x7ffff680]                        0x433d7365  0x72505c3a  0x6172676f  0x6946206d
+[0x7ffff690]                        0x2073656c  0x36387828  0x72500029  0x6172676f
+[0x7ffff6a0]                        0x7461446d  0x3a433d61  0x6f72505c  0x6d617267
+[0x7ffff6b0]                        0x61746144  0x4f525000  0x53534543  0x525f524f
+[0x7ffff6c0]                        0x53495645  0x3d4e4f49  0x33306333  0x4f525000
+[0x7ffff6d0]                        0x53534543  0x4c5f524f  0x4c455645  0x5000363d
+[0x7ffff6e0]                        0x45434f52  0x524f5353  0x4544495f  0x4649544e
+[0x7ffff6f0]                        0x3d524549  0x65746e49  0x2034366c  0x696d6146
+[0x7ffff700]                        0x3620796c  0x646f4d20  0x36206c65  0x74532030
+[0x7ffff710]                        0x69707065  0x3320676e  0x6547202c  0x6e69756e
+[0x7ffff720]                        0x746e4965  0x50006c65  0x45434f52  0x524f5353
+[0x7ffff730]                        0x4352415f  0x45544948  0x33343657  0x4d413d32
+[0x7ffff740]                        0x00343644  0x434f5250  0x4f535345  0x52415f52
+[0x7ffff750]                        0x54494843  0x55544345  0x783d4552  0x50003638
+[0x7ffff760]                        0x45485441  0x2e3d5458  0x3b4d4f43  0x4558452e
+[0x7ffff770]                        0x41422e3b  0x432e3b54  0x2e3b444d  0x3b534256
+[0x7ffff780]                        0x4542562e  0x534a2e3b  0x534a2e3b  0x572e3b45
+[0x7ffff790]                        0x2e3b4653  0x3b485357  0x43534d2e  0x74615000
+[0x7ffff7a0]                        0x3a433d68  0x6f72505c  0x6d617267  0x61746144
+[0x7ffff7b0]                        0x61724f5c  0x5c656c63  0x6176614a  0x76616a5c
+[0x7ffff7c0]                        0x74617061  0x3a433b68  0x6f72505c  0x6d617267
+[0x7ffff7d0]                        0x6c694620  0x28207365  0x29363878  0x746e495c
+[0x7ffff7e0]                        0x695c6c65  0x20534c43  0x65696c43  0x3b5c746e
+[0x7ffff7f0]                        0x505c3a43  0x72676f72  0x46206d61  0x73656c69
+[0x7ffff800]                        0x746e495c  0x695c6c65  0x20534c43  0x65696c43
+[0x7ffff810]                        0x3b5c746e  0x575c3a43  0x6f646e69  0x735c7377
+[0x7ffff820]                        0x65747379  0x3b32336d  0x575c3a43  0x6f646e69
+[0x7ffff830]                        0x433b7377  0x69575c3a  0x776f646e  0x79535c73
+[0x7ffff840]                        0x6d657473  0x575c3233  0x3b6d6562  0x575c3a43
+[0x7ffff850]                        0x6f646e69  0x535c7377  0x65747379  0x5c32336d
+[0x7ffff860]                        0x646e6957  0x5073776f  0x7265776f  0x6c656853
+[0x7ffff870]                        0x31765c6c  0x3b5c302e  0x505c3a43  0x72676f72
+[0x7ffff880]                        0x46206d61  0x73656c69  0x38782820  0x495c2936
+[0x7ffff890]                        0x6c65746e  0x746e495c  0x52286c65  0x614d2029
+[0x7ffff8a0]                        0x6567616e  0x746e656d  0x676e4520  0x20656e69
+[0x7ffff8b0]                        0x706d6f43  0x6e656e6f  0x445c7374  0x433b4c41
+[0x7ffff8c0]                        0x72505c3a  0x6172676f  0x6946206d  0x5c73656c
+[0x7ffff8d0]                        0x65746e49  0x6e495c6c  0x286c6574  0x4d202952
+[0x7ffff8e0]                        0x67616e61  0x6e656d65  0x6e452074  0x656e6967
+[0x7ffff8f0]                        0x6d6f4320  0x656e6f70  0x5c73746e  0x3b4c4144
+[0x7ffff900]                        0x505c3a43  0x72676f72  0x46206d61  0x73656c69
+[0x7ffff910]                        0x38782820  0x495c2936  0x6c65746e  0x746e495c
+[0x7ffff920]                        0x52286c65  0x614d2029  0x6567616e  0x746e656d
+[0x7ffff930]                        0x676e4520  0x20656e69  0x706d6f43  0x6e656e6f
+[0x7ffff940]                        0x495c7374  0x433b5450  0x72505c3a  0x6172676f
+[0x7ffff950]                        0x6946206d  0x5c73656c  0x65746e49  0x6e495c6c
+[0x7ffff960]                        0x286c6574  0x4d202952  0x67616e61  0x6e656d65
+[0x7ffff970]                        0x6e452074  0x656e6967  0x6d6f4320  0x656e6f70
+[0x7ffff980]                        0x5c73746e  0x3b545049  0x505c3a43  0x72676f72
+[0x7ffff990]                        0x46206d61  0x73656c69  0x38782820  0x4e5c2936
+[0x7ffff9a0]                        0x49444956  0x6f432041  0x726f7072  0x6f697461
+[0x7ffff9b0]                        0x68505c6e  0x5c587379  0x6d6d6f43  0x253b6e6f
+[0x7ffff9c0]                        0x4156414a  0x4d4f485f  0x6a5c2545  0x625c6572
+[0x7ffff9d0]                        0x253b6e69  0x4156414a  0x4d4f485f  0x625c2545
+[0x7ffff9e0]                        0x633b6e69  0x6c615c3a  0x61726574  0x7331395c
+[0x7ffff9f0]                        0x715c3170  0x74726175  0x625c7375  0x443b6e69
+[0x7ffffa00]                        0x414d5c3a  0x42414c54  0x6e75725c  0x656d6974
+[0x7ffffa10]                        0x6e69775c  0x443b3436  0x414d5c3a  0x42414c54
+[0x7ffffa20]                        0x6e69625c  0x5c3a443b  0x4c54414d  0x705c4241
+[0x7ffffa30]                        0x73796c6f  0x65636170  0x6e69625c  0x5c3a443b
+[0x7ffffa40]                        0x65766544  0x5c706f6c  0x65646f6e  0x253b736a
+[0x7ffffa50]                        0x4156414a  0x4d4f485f  0x6a5c2545  0x625c6572
+[0x7ffffa60]                        0x433b6e69  0x72505c3a  0x6172676f  0x6946206d
+[0x7ffffa70]                        0x2073656c  0x36387828  0x694d5c29  0x736f7263
+[0x7ffffa80]                        0x2074666f  0x204c5153  0x76726553  0x435c7265
+[0x7ffffa90]                        0x6e65696c  0x44532074  0x444f5c4b  0x315c4342
+[0x7ffffaa0]                        0x545c3033  0x736c6f6f  0x6e69425c  0x433b5c6e
+[0x7ffffab0]                        0x72505c3a  0x6172676f  0x6946206d  0x2073656c
+[0x7ffffac0]                        0x36387828  0x694d5c29  0x736f7263  0x2074666f
+[0x7ffffad0]                        0x204c5153  0x76726553  0x315c7265  0x545c3034
+[0x7ffffae0]                        0x736c6f6f  0x6e69425c  0x433b5c6e  0x72505c3a
+[0x7ffffaf0]                        0x6172676f  0x6946206d  0x2073656c  0x36387828
+[0x7ffffb00]                        0x694d5c29  0x736f7263  0x2074666f  0x204c5153
+[0x7ffffb10]                        0x76726553  0x315c7265  0x445c3034  0x425c5354
+[0x7ffffb20]                        0x5c6e6e69  0x5c3a433b  0x676f7250  0x206d6172
+[0x7ffffb30]                        0x656c6946  0x694d5c73  0x736f7263  0x2074666f
+[0x7ffffb40]                        0x204c5153  0x76726553  0x315c7265  0x545c3031
+[0x7ffffb50]                        0x736c6f6f  0x6e69425c  0x433b5c6e  0x72505c3a
+[0x7ffffb60]                        0x6172676f  0x6946206d  0x2073656c  0x36387828
+[0x7ffffb70]                        0x694d5c29  0x736f7263  0x2074666f  0x204c5153
+[0x7ffffb80]                        0x76726553  0x315c7265  0x545c3031  0x736c6f6f
+[0x7ffffb90]                        0x6e69425c  0x433b5c6e  0x72505c3a  0x6172676f
+[0x7ffffba0]                        0x6946206d  0x5c73656c  0x7263694d  0x666f736f
+[0x7ffffbb0]                        0x51532074  0x6553204c  0x72657672  0x3031315c
+[0x7ffffbc0]                        0x5354445c  0x6e69425c  0x433b5c6e  0x72505c3a
+[0x7ffffbd0]                        0x6172676f  0x6946206d  0x2073656c  0x36387828
+[0x7ffffbe0]                        0x694d5c29  0x736f7263  0x2074666f  0x204c5153
+[0x7ffffbf0]                        0x76726553  0x315c7265  0x545c3031  0x736c6f6f
+[0x7ffffc00]                        0x6e69425c  0x614d5c6e  0x6567616e  0x746e656d
+[0x7ffffc10]                        0x64757453  0x3b5c6f69  0x505c3a43  0x72676f72
+[0x7ffffc20]                        0x46206d61  0x73656c69  0x38782820  0x4d5c2936
+[0x7ffffc30]                        0x6f726369  0x74666f73  0x73695620  0x206c6175
+[0x7ffffc40]                        0x64757453  0x31206f69  0x5c302e30  0x6d6d6f43
+[0x7ffffc50]                        0x5c376e6f  0x5c454449  0x76697250  0x41657461
+[0x7ffffc60]                        0x6d657373  0x65696c62  0x433b5c73  0x72505c3a
+[0x7ffffc70]                        0x6172676f  0x6946206d  0x2073656c  0x36387828
+[0x7ffffc80]                        0x694d5c29  0x736f7263  0x2074666f  0x204c5153
+[0x7ffffc90]                        0x76726553  0x315c7265  0x445c3031  0x425c5354
+[0x7ffffca0]                        0x5c6e6e69  0x433b2e3b  0x72505c3a  0x6172676f
+[0x7ffffcb0]                        0x6946206d  0x5c73656c  0x6176614a  0x6b646a5c
+[0x7ffffcc0]                        0x5c30312d  0x3b6e6962  0x505c3a43  0x72676f72
+[0x7ffffcd0]                        0x46206d61  0x73656c69  0x76614a5c  0x646a5c61
+[0x7ffffce0]                        0x30312d6b  0x65726a5c  0x6e69625c  0x3d534f00
+[0x7ffffcf0]                        0x646e6957  0x5f73776f  0x4e00544e  0x45424d55
+[0x7ffffd00]                        0x464f5f52  0x4f52505f  0x53534543  0x3d53524f
+[0x7ffffd10]                        0x4f4e0038  0x4c49585f  0x5f584e49  0x41544144
+[0x7ffffd20]                        0x43494c5f  0x45534e45  0x4449483d  0x004e4544
+[0x7ffffd30]                        0x45444f4e  0x5441505f  0x3a443d48  0x7665445c
+[0x7ffffd40]                        0x706f6c65  0x646f6e5c  0x5c736a65  0x65646f6e
+[0x7ffffd50]                        0x6f6c675f  0x5c6c6162  0x65646f6e  0x646f6d5f
+[0x7ffffd60]                        0x73656c75  0x4c4b4d00  0x5245535f  0x3d4c4149
+[0x7ffffd70]                        0x00534559  0x4f474f4c  0x5245534e  0x3d524556
+[0x7ffffd80]                        0x45445c5c  0x4f544b53  0x44312d50  0x43474b30
+[0x7ffffd90]                        0x4f4c004b  0x414c4143  0x41445050  0x433d4154
+[0x7ffffda0]                        0x73555c3a  0x5c737265  0x73757361  0x7070415c
+[0x7ffffdb0]                        0x61746144  0x636f4c5c  0x4b006c61  0x445f504d
+[0x7ffffdc0]                        0x494c5055  0x45544143  0x42494c5f  0x3d4b4f5f
+[0x7ffffdd0]                        0x45555254  0x56414a00  0x4f485f41  0x433d454d
+[0x7ffffde0]                        0x72505c3a  0x6172676f  0x6946206d  0x5c73656c
+[0x7ffffdf0]                        0x6176614a  0x6b646a5c  0x0030312d  0x454d4f48
+[0x7ffffe00]                        0x48544150  0x73555c3d  0x5c737265  0x73757361
+[0x7ffffe10]                        0x4d4f4800  0x49524445  0x433d4556  0x5046003a
+[0x7ffffe20]                        0x52425f53  0x4553574f  0x53555f52  0x505f5245
+[0x7ffffe30]                        0x49464f52  0x535f454c  0x4e495254  0x65443d47
+[0x7ffffe40]                        0x6c756166  0x50460074  0x52425f53  0x4553574f
+[0x7ffffe50]                        0x50415f52  0x52505f50  0x4c49464f  0x54535f45
+[0x7ffffe60]                        0x474e4952  0x746e493d  0x656e7265  0x78452074
+[0x7ffffe70]                        0x726f6c70  0x43007265  0x70536d6f  0x433d6365
+[0x7ffffe80]                        0x69575c3a  0x776f646e  0x79735c73  0x6d657473
+[0x7ffffe90]                        0x635c3233  0x652e646d  0x43006578  0x55504d4f
+[0x7ffffea0]                        0x4e524554  0x3d454d41  0x4b534544  0x2d504f54
+[0x7ffffeb0]                        0x4b304431  0x004b4347  0x6d6d6f43  0x72506e6f
+[0x7ffffec0]                        0x6172676f  0x3436576d  0x433d3233  0x72505c3a
+[0x7ffffed0]                        0x6172676f  0x6946206d  0x5c73656c  0x6d6d6f43
+[0x7ffffee0]                        0x46206e6f  0x73656c69  0x6d6f4300  0x506e6f6d
+[0x7ffffef0]                        0x72676f72  0x69466d61  0x2873656c  0x29363878
+[0x7fffff00]                        0x5c3a433d  0x676f7250  0x206d6172  0x656c6946
+[0x7fffff10]                        0x78282073  0x5c293638  0x6d6d6f43  0x46206e6f
+[0x7fffff20]                        0x73656c69  0x6d6f4300  0x506e6f6d  0x72676f72
+[0x7fffff30]                        0x69466d61  0x3d73656c  0x505c3a43  0x72676f72
+[0x7fffff40]                        0x46206d61  0x73656c69  0x38782820  0x435c2936
+[0x7fffff50]                        0x6f6d6d6f  0x6946206e  0x0073656c  0x73616c63
+[0x7fffff60]                        0x74617073  0x3b2e3d68  0x505c3a43  0x72676f72
+[0x7fffff70]                        0x46206d61  0x73656c69  0x76614a5c  0x646a5c61
+[0x7fffff80]                        0x30312d6b  0x62696c5c  0x2e74645c  0x3b72616a
+[0x7fffff90]                        0x505c3a43  0x72676f72  0x46206d61  0x73656c69
+[0x7fffffa0]                        0x76614a5c  0x646a5c61  0x30312d6b  0x62696c5c
+[0x7fffffb0]                        0x6f6f745c  0x6a2e736c  0x41007261  0x41445050
+[0x7fffffc0]                        0x433d4154  0x73555c3a  0x5c737265  0x73757361
+[0x7fffffd0]                        0x7070415c  0x61746144  0x616f525c  0x676e696d
+[0x7fffffe0]                        0x4c4c4100  0x52455355  0x4f525053  0x454c4946
+[0x7ffffff0]                        0x5c3a433d  0x676f7250  0x446d6172  0x00617461
+
+        KERNEL DATA
+[0x90000000]...[0x90010000]        0x00000000
+
+

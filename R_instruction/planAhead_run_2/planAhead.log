@@ -1,0 +1,86 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat May 26 10:19:49 2018
+# Process ID: 7004
+# Log file: D:/FPGA/R_instruction/planAhead_run_2/planAhead.log
+# Journal file: D:/FPGA/R_instruction/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from E:/ise/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/FPGA/R_instruction/pa.fromNetlist.tcl
+# create_project -name R_instruction -dir "D:/FPGA/R_instruction/planAhead_run_2" -part xc6slx16csg324-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/FPGA/R_instruction/Top_LED.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/FPGA/R_instruction} {ipcore_dir} }
+# add_files [list {ipcore_dir/Inst_ROM.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "Top_LED.ucf" [current_fileset -constrset]
+Adding file 'D:/FPGA/R_instruction/Top_LED.ucf' to fileset 'constrs_1'
+# add_files [list {Top_LED.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-3
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Top_LED.ngc ...
+WARNING:NetListWriters:298 - No output is written to Top_LED.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus test_cpu/Inst_code<31 : 0> on block
+   Top_LED is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file Top_LED.edif ...
+ngc2edif: Total memory usage is 93824 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/R_instruction.data/cache/Top_LED_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/R_instruction.data/cache/Top_LED_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Inst_ROM.ngc ...
+WARNING:NetListWriters:298 - No output is written to Inst_ROM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Inst_ROM.edif ...
+ngc2edif: Total memory usage is 81056 kilobytes
+
+Reading core file 'D:/FPGA/R_instruction/ipcore_dir/Inst_ROM.ngc' for (cell view 'Inst_ROM', library 'Top_LED_lib', file 'Top_LED.ngc')
+Parsing EDIF File [./planAhead_run_2/R_instruction.data/cache/Inst_ROM_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/R_instruction.data/cache/Inst_ROM_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'Top_LED' is not ideal for floorplanning, since the cellview 'Top_LED' defined in file 'Top_LED.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from E:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : E:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/FPGA/R_instruction/ipcore_dir/Inst_ROM.ncf]
+Finished Parsing UCF File [D:/FPGA/R_instruction/ipcore_dir/Inst_ROM.ncf]
+Parsing UCF File [D:/FPGA/R_instruction/Top_LED.ucf]
+Finished Parsing UCF File [D:/FPGA/R_instruction/Top_LED.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: 46d1bec3
+link_design: Time (s): elapsed = 00:00:14 . Memory (MB): peak = 650.945 ; gain = 189.441
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See D:/FPGA/R_instruction\planAhead_pid7004.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat May 26 10:59:42 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

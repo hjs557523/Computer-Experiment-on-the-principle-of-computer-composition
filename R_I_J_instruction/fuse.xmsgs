@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"D:/FPGA/R_I_J_instruction/pc.v" Line 23: Redeclaration of ansi port <arg fmt="%s" index="1">PC</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"D:/FPGA/R_I_J_instruction/TOP_RIJ_CPU.v" Line 44: Redeclaration of ansi port <arg fmt="%s" index="1">F</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"D:/FPGA/R_I_J_instruction/TOP_RIJ_CPU.v" Line 49: Redeclaration of ansi port <arg fmt="%s" index="1">PC</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/FPGA/R_I_J_instruction/TOP_RIJ_CPU.v" Line 58: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">W_Addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+</messages>
+

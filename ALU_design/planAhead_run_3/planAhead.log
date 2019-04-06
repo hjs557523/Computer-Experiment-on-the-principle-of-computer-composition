@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat May 05 12:00:43 2018
+# Process ID: 7920
+# Log file: D:/FPGA/ALU_design/planAhead_run_3/planAhead.log
+# Journal file: D:/FPGA/ALU_design/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from E:/ise/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/FPGA/ALU_design/pa.fromNetlist.tcl
+# create_project -name ALU_design -dir "D:/FPGA/ALU_design/planAhead_run_4" -part xc6slx16csg324-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/FPGA/ALU_design/ALU_TOP.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/FPGA/ALU_design} }
+# set_property target_constrs_file "ALU_TOP.ucf" [current_fileset -constrset]
+Adding file 'D:/FPGA/ALU_design/ALU_TOP.ucf' to fileset 'constrs_1'
+# add_files [list {ALU_TOP.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-3
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ALU_TOP.ngc ...
+WARNING:NetListWriters:298 - No output is written to ALU_TOP.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus A<31 : 0> on block ALU_TOP is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ALU_TOP.edif ...
+ngc2edif: Total memory usage is 85152 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ALU_TOP.ngc ...
+WARNING:NetListWriters:298 - No output is written to ALU_TOP.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus A<31 : 0> on block ALU_TOP is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ALU_TOP.edif ...
+ngc2edif: Total memory usage is 85152 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-7920-DESKTOP-1D0KGCK/ngc2edif/ALU_TOP.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-7920-DESKTOP-1D0KGCK/ngc2edif/ALU_TOP.edif]
+Loading clock regions from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from E:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : E:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/FPGA/ALU_design/ALU_TOP.ucf]
+Finished Parsing UCF File [D:/FPGA/ALU_design/ALU_TOP.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 0fd81b34
+link_design: Time (s): elapsed = 00:00:14 . Memory (MB): peak = 643.379 ; gain = 176.832
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See D:/FPGA/ALU_design\planAhead_pid7920.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat May 05 12:02:03 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

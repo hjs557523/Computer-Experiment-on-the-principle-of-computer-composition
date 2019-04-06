@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat May 12 11:39:42 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Mem_Addr<2>" LOCATE = SITE "T10" LEVEL 1;
+COMP "Mem_Addr<3>" LOCATE = SITE "T9" LEVEL 1;
+COMP "Mem_Addr<4>" LOCATE = SITE "V9" LEVEL 1;
+COMP "Mem_Addr<5>" LOCATE = SITE "M8" LEVEL 1;
+COMP "Mem_Addr<6>" LOCATE = SITE "N8" LEVEL 1;
+COMP "Mem_Addr<7>" LOCATE = SITE "U8" LEVEL 1;
+COMP "C<0>" LOCATE = SITE "V8" LEVEL 1;
+COMP "C<1>" LOCATE = SITE "T5" LEVEL 1;
+COMP "LED<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "LED<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "LED<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "LED<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "LED<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "LED<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "LED<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "LED<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "Mem_Write" LOCATE = SITE "C4" LEVEL 1;
+COMP "Clk" LOCATE = SITE "C9" LEVEL 1;
+SCHEMATIC END;
+

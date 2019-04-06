@@ -1,0 +1,5 @@
+NET "A"   LOC="T10";
+NET "B"   LOC="T9";
+NET "Ci"  LOC="V9";
+NET "F"   LOC="U16";
+NET "Co"  LOC="V16";

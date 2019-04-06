@@ -1,0 +1,124 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\ise\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml ALU_TOP.twx ALU_TOP.ncd -o ALU_TOP.twr ALU_TOP.pcf -ucf
+ALU_TOP.ucf
+
+Design file:              ALU_TOP.ncd
+Physical constraint file: ALU_TOP.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+AB_SW<0>       |LED<0>         |   16.076|
+AB_SW<0>       |LED<1>         |   15.617|
+AB_SW<0>       |LED<2>         |   15.132|
+AB_SW<0>       |LED<3>         |   14.391|
+AB_SW<0>       |LED<4>         |   14.910|
+AB_SW<0>       |LED<5>         |   14.720|
+AB_SW<0>       |LED<6>         |   14.244|
+AB_SW<0>       |LED<7>         |   16.516|
+AB_SW<1>       |LED<0>         |   16.059|
+AB_SW<1>       |LED<1>         |   15.600|
+AB_SW<1>       |LED<2>         |   15.115|
+AB_SW<1>       |LED<3>         |   14.374|
+AB_SW<1>       |LED<4>         |   14.893|
+AB_SW<1>       |LED<5>         |   14.703|
+AB_SW<1>       |LED<6>         |   14.227|
+AB_SW<1>       |LED<7>         |   16.499|
+AB_SW<2>       |LED<0>         |   15.920|
+AB_SW<2>       |LED<1>         |   15.461|
+AB_SW<2>       |LED<2>         |   14.976|
+AB_SW<2>       |LED<3>         |   14.235|
+AB_SW<2>       |LED<4>         |   14.754|
+AB_SW<2>       |LED<5>         |   14.564|
+AB_SW<2>       |LED<6>         |   14.088|
+AB_SW<2>       |LED<7>         |   16.360|
+ALU_OP<0>      |LED<0>         |   13.405|
+ALU_OP<0>      |LED<1>         |   12.840|
+ALU_OP<0>      |LED<2>         |   13.136|
+ALU_OP<0>      |LED<3>         |   12.908|
+ALU_OP<0>      |LED<4>         |   12.600|
+ALU_OP<0>      |LED<5>         |   13.171|
+ALU_OP<0>      |LED<6>         |   12.113|
+ALU_OP<0>      |LED<7>         |   13.739|
+ALU_OP<1>      |LED<0>         |   12.880|
+ALU_OP<1>      |LED<1>         |   12.192|
+ALU_OP<1>      |LED<2>         |   12.611|
+ALU_OP<1>      |LED<3>         |   12.507|
+ALU_OP<1>      |LED<4>         |   12.075|
+ALU_OP<1>      |LED<5>         |   12.924|
+ALU_OP<1>      |LED<6>         |   11.463|
+ALU_OP<1>      |LED<7>         |   13.332|
+ALU_OP<2>      |LED<0>         |   12.708|
+ALU_OP<2>      |LED<1>         |   12.020|
+ALU_OP<2>      |LED<2>         |   12.439|
+ALU_OP<2>      |LED<3>         |   12.009|
+ALU_OP<2>      |LED<4>         |   11.903|
+ALU_OP<2>      |LED<5>         |   12.426|
+ALU_OP<2>      |LED<6>         |   11.214|
+ALU_OP<2>      |LED<7>         |   12.834|
+F_LED_SW<0>    |LED<0>         |    9.485|
+F_LED_SW<0>    |LED<1>         |    8.521|
+F_LED_SW<0>    |LED<2>         |    9.596|
+F_LED_SW<0>    |LED<3>         |    8.887|
+F_LED_SW<0>    |LED<4>         |    9.832|
+F_LED_SW<0>    |LED<5>         |    8.614|
+F_LED_SW<0>    |LED<6>         |    8.637|
+F_LED_SW<0>    |LED<7>         |    9.337|
+F_LED_SW<1>    |LED<0>         |   11.477|
+F_LED_SW<1>    |LED<1>         |   11.451|
+F_LED_SW<1>    |LED<2>         |   11.577|
+F_LED_SW<1>    |LED<3>         |   11.837|
+F_LED_SW<1>    |LED<4>         |   10.697|
+F_LED_SW<1>    |LED<5>         |   11.880|
+F_LED_SW<1>    |LED<6>         |   11.166|
+F_LED_SW<1>    |LED<7>         |   11.526|
+F_LED_SW<2>    |LED<0>         |   10.048|
+F_LED_SW<2>    |LED<1>         |    8.839|
+F_LED_SW<2>    |LED<2>         |    9.651|
+F_LED_SW<2>    |LED<3>         |    8.886|
+F_LED_SW<2>    |LED<4>         |    9.701|
+F_LED_SW<2>    |LED<5>         |    8.987|
+F_LED_SW<2>    |LED<6>         |    9.243|
+F_LED_SW<2>    |LED<7>         |   10.158|
+---------------+---------------+---------+
+
+
+Analysis completed Wed May 16 14:35:54 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 241 MB
+
+
+

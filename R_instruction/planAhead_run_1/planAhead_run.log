@@ -1,0 +1,121 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from E:/ise/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/FPGA/R_instruction/pa.fromHdl.tcl
+# create_project -name R_instruction -dir "D:/FPGA/R_instruction/planAhead_run_1" -part xc6slx16csg324-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Top_LED.ucf" [current_fileset -constrset]
+Adding file 'D:/FPGA/R_instruction/Top_LED.ucf' to fileset 'constrs_1'
+# add_files [list {ipcore_dir/Inst_ROM.ngc}]
+# set hdlfile [add_files [list {ipcore_dir/Inst_ROM.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Register_file.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {pc.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ALU.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {top_R_cpu.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Top_LED.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Top_LED $srcset
+# add_files [list {Top_LED.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Inst_ROM.ncf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/FPGA/R_instruction/ipcore_dir/Inst_ROM.v" into library work
+Analyzing Verilog file "D:/FPGA/R_instruction/Register_file.v" into library work
+Analyzing Verilog file "D:/FPGA/R_instruction/pc.v" into library work
+Analyzing Verilog file "D:/FPGA/R_instruction/ALU.v" into library work
+Analyzing Verilog file "D:/FPGA/R_instruction/top_R_cpu.v" into library work
+Analyzing Verilog file "D:/FPGA/R_instruction/Top_LED.v" into library work
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Inst_ROM.ngc ...
+WARNING:NetListWriters:298 - No output is written to Inst_ROM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Inst_ROM.edif ...
+ngc2edif: Total memory usage is 81056 kilobytes
+
+Reading core file 'D:/FPGA/R_instruction/ipcore_dir/Inst_ROM.ngc' for (cell view 'Inst_ROM', library 'work', file 'Inst_ROM.v')
+Parsing EDIF File [./.Xil/PlanAhead-11736-DESKTOP-1D0KGCK/ngc2edif/Inst_ROM.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-11736-DESKTOP-1D0KGCK/ngc2edif/Inst_ROM.edif]
+Loading clock regions from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from E:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : E:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/FPGA/R_instruction/Top_LED.ucf]
+Finished Parsing UCF File [D:/FPGA/R_instruction/Top_LED.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 8ed1aaa7
+open_rtl_design: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 656.043 ; gain = 186.461
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin T11 [get_ports {LED[7]}]
+endgroup
+startgroup
+set_property package_pin R11 [get_ports {LED[6]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {LED[5]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {LED[4]}]
+endgroup
+startgroup
+set_property package_pin V15 [get_ports {LED[3]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {LED[2]}]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports {LED[1]}]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports {LED[0]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {SW[2]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {SW[1]}]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports {SW[0]}]
+endgroup
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports rst]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed May 16 16:53:26 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

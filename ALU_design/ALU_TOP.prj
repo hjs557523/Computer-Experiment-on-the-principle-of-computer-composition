@@ -1,0 +1,4 @@
+verilog work "OP.v"
+verilog work "LED_choice.v"
+verilog work "data_test.v"
+verilog work "ALU_TOP.v"

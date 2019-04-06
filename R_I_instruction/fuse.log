@@ -1,0 +1,39 @@
+Running: E:\ise\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/FPGA/R_I_instruction/test_isim_beh.exe -prj D:/FPGA/R_I_instruction/test_beh.prj work.test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/FPGA/R_I_instruction/ipcore_dir/Inst_ROM.v" into library work
+Analyzing Verilog file "D:/FPGA/R_I_instruction/Register_file.v" into library work
+Analyzing Verilog file "D:/FPGA/R_I_instruction/pc.v" into library work
+Analyzing Verilog file "D:/FPGA/R_I_instruction/OP_YIMA.v" into library work
+Analyzing Verilog file "D:/FPGA/R_I_instruction/ipcore_dir/RAM_B.v" into library work
+Analyzing Verilog file "D:/FPGA/R_I_instruction/ALU.v" into library work
+Analyzing Verilog file "D:/FPGA/R_I_instruction/TOP_RI_CPU.v" into library work
+WARNING:HDLCompiler:751 - "D:/FPGA/R_I_instruction/TOP_RI_CPU.v" Line 40: Redeclaration of ansi port F is not allowed
+Analyzing Verilog file "D:/FPGA/R_I_instruction/test.v" into library work
+Analyzing Verilog file "E:/ise/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/FPGA/R_I_instruction/TOP_RI_CPU.v" Line 48: Size mismatch in connection of port <W_Addr>. Formal port size is 5-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module Inst_ROM
+Compiling module pc
+Compiling module OP_YIMA
+Compiling module Register_file
+Compiling module ALU
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module RAM_B
+Compiling module TOP_RI_CPU
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 15 Verilog Units
+Built simulation executable D:/FPGA/R_I_instruction/test_isim_beh.exe
+Fuse Memory Usage: 31996 KB
+Fuse CPU Usage: 984 ms

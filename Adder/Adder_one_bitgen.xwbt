@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\FPGA\Adder\Adder_one.ncd
+OUTFILE=D:\FPGA\Adder\Adder_one.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\FPGA\Adder
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,31 @@
+xst -intstyle ise -ifn "D:/FPGA/R_I_instruction/TOP_LED.xst" -ofn "D:/FPGA/R_I_instruction/TOP_LED.syr" 
+xst -intstyle ise -ifn "D:/FPGA/R_I_instruction/TOP_LED.xst" -ofn "D:/FPGA/R_I_instruction/TOP_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP_LED.ucf -p xc6slx16-csg324-3 TOP_LED.ngc TOP_LED.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_LED_map.ncd TOP_LED.ngd TOP_LED.pcf 
+par -w -intstyle ise -ol high -mt off TOP_LED_map.ncd TOP_LED.ncd TOP_LED.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP_LED.twx TOP_LED.ncd -o TOP_LED.twr TOP_LED.pcf -ucf TOP_LED.ucf 
+bitgen -intstyle ise -f TOP_LED.ut TOP_LED.ncd 
+xst -intstyle ise -ifn "D:/FPGA/R_I_instruction/TOP_LED.xst" -ofn "D:/FPGA/R_I_instruction/TOP_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP_LED.ucf -p xc6slx16-csg324-3 TOP_LED.ngc TOP_LED.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_LED_map.ncd TOP_LED.ngd TOP_LED.pcf 
+par -w -intstyle ise -ol high -mt off TOP_LED_map.ncd TOP_LED.ncd TOP_LED.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP_LED.twx TOP_LED.ncd -o TOP_LED.twr TOP_LED.pcf -ucf TOP_LED.ucf 
+bitgen -intstyle ise -f TOP_LED.ut TOP_LED.ncd 
+xst -intstyle ise -ifn "D:/FPGA/R_I_instruction/TOP_LED.xst" -ofn "D:/FPGA/R_I_instruction/TOP_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP_LED.ucf -p xc6slx16-csg324-3 TOP_LED.ngc TOP_LED.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_LED_map.ncd TOP_LED.ngd TOP_LED.pcf 
+par -w -intstyle ise -ol high -mt off TOP_LED_map.ncd TOP_LED.ncd TOP_LED.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP_LED.twx TOP_LED.ncd -o TOP_LED.twr TOP_LED.pcf -ucf TOP_LED.ucf 
+bitgen -intstyle ise -f TOP_LED.ut TOP_LED.ncd 
+xst -intstyle ise -ifn "D:/FPGA/R_I_instruction/TOP_LED.xst" -ofn "D:/FPGA/R_I_instruction/TOP_LED.syr" 
+xst -intstyle ise -ifn "D:/FPGA/R_I_instruction/TOP_LED.xst" -ofn "D:/FPGA/R_I_instruction/TOP_LED.syr" 
+xst -intstyle ise -ifn "D:/FPGA/R_I_instruction/TOP_LED.xst" -ofn "D:/FPGA/R_I_instruction/TOP_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP_LED.ucf -p xc6slx16-csg324-3 TOP_LED.ngc TOP_LED.ngd  
+xst -intstyle ise -ifn "D:/FPGA/R_I_instruction/TOP_LED.xst" -ofn "D:/FPGA/R_I_instruction/TOP_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP_LED.ucf -p xc6slx16-csg324-3 TOP_LED.ngc TOP_LED.ngd  
+xst -intstyle ise -ifn "D:/FPGA/R_I_instruction/TOP_LED.xst" -ofn "D:/FPGA/R_I_instruction/TOP_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP_LED.ucf -p xc6slx16-csg324-3 TOP_LED.ngc TOP_LED.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_LED_map.ncd TOP_LED.ngd TOP_LED.pcf 
+par -w -intstyle ise -ol high -mt off TOP_LED_map.ncd TOP_LED.ncd TOP_LED.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP_LED.twx TOP_LED.ncd -o TOP_LED.twr TOP_LED.pcf -ucf TOP_LED.ucf 
+bitgen -intstyle ise -f TOP_LED.ut TOP_LED.ncd 

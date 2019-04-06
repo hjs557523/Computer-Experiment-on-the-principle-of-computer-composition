@@ -1,0 +1,564 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: Top_LED.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top_LED.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top_LED"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Top_LED
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\FPGA\R_instruction\ipcore_dir\Inst_ROM.v" into library work
+Parsing module <Inst_ROM>.
+Analyzing Verilog file "D:\FPGA\R_instruction\Register_file.v" into library work
+Parsing module <Register_file>.
+Analyzing Verilog file "D:\FPGA\R_instruction\pc.v" into library work
+Parsing module <pc>.
+Analyzing Verilog file "D:\FPGA\R_instruction\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "D:\FPGA\R_instruction\top_R_cpu.v" into library work
+Parsing module <top_R_cpu>.
+Analyzing Verilog file "D:\FPGA\R_instruction\Top_LED.v" into library work
+Parsing module <Top_LED>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Top_LED>.
+
+Elaborating module <top_R_cpu>.
+
+Elaborating module <pc>.
+
+Elaborating module <Inst_ROM>.
+WARNING:HDLCompiler:1499 - "D:\FPGA\R_instruction\ipcore_dir\Inst_ROM.v" Line 39: Empty module <Inst_ROM> remains a black box.
+
+Elaborating module <Register_file>.
+
+Elaborating module <ALU>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top_LED>.
+    Related source file is "D:\FPGA\R_instruction\Top_LED.v".
+    Found 8-bit 7-to-1 multiplexer for signal <LED> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Top_LED> synthesized.
+
+Synthesizing Unit <top_R_cpu>.
+    Related source file is "D:\FPGA\R_instruction\top_R_cpu.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <top_R_cpu> synthesized.
+
+Synthesizing Unit <pc>.
+    Related source file is "D:\FPGA\R_instruction\pc.v".
+    Found 8-bit register for signal <PC>.
+    Found 32-bit adder for signal <PC_new> created at line 31.
+    WARNING:Xst:2404 -  FFs/Latches <PC<31:8>> (without init value) have a constant value of 0 in block <pc>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+Unit <pc> synthesized.
+
+Synthesizing Unit <Register_file>.
+    Related source file is "D:\FPGA\R_instruction\Register_file.v".
+    Found 1024-bit register for signal <n0046[1023:0]>.
+    Found 32-bit 32-to-1 multiplexer for signal <R_Data_A> created at line 38.
+    Found 32-bit 32-to-1 multiplexer for signal <R_Data_B> created at line 39.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  34 Multiplexer(s).
+Unit <Register_file> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\FPGA\R_instruction\ALU.v".
+    Found 33-bit subtractor for signal <GND_6_o_GND_6_o_sub_7_OUT> created at line 37.
+    Found 33-bit adder for signal <n0033> created at line 36.
+    Found 32-bit shifter logical left for signal <B[31]_A[31]_shift_left_9_OUT> created at line 43
+    Found 32-bit 8-to-1 multiplexer for signal <F> created at line 31.
+    Found 32-bit comparator greater for signal <A[31]_B[31]_LessThan_8_o> created at line 39
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 1
+ 33-bit adder                                          : 1
+ 33-bit subtractor                                     : 1
+# Registers                                            : 2
+ 1024-bit register                                     : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 41
+ 1-bit 2-to-1 multiplexer                              : 3
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 33
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 8-to-1 multiplexer                             : 1
+ 8-bit 7-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 6
+ 1-bit xor2                                            : 5
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/Inst_ROM.ngc>.
+Loading core <Inst_ROM> for timing and area information for instance <Inst_ROM1>.
+
+Synthesizing (advanced) Unit <pc>.
+The following registers are absorbed into accumulator <PC>: 1 register on signal <PC>.
+Unit <pc> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 33-bit adder                                          : 1
+ 33-bit subtractor                                     : 1
+# Accumulators                                         : 1
+ 8-bit up accumulator                                  : 1
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 41
+ 1-bit 2-to-1 multiplexer                              : 3
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 33
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 8-to-1 multiplexer                             : 1
+ 8-bit 7-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 6
+ 1-bit xor2                                            : 5
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <pc_connect/PC_0> of sequential type is unconnected in block <top_R_cpu>.
+WARNING:Xst:2677 - Node <pc_connect/PC_1> of sequential type is unconnected in block <top_R_cpu>.
+
+Optimizing unit <Top_LED> ...
+
+Optimizing unit <top_R_cpu> ...
+
+Optimizing unit <Register_file> ...
+
+Optimizing unit <ALU> ...
+WARNING:Xst:1293 - FF/Latch <test_cpu/R_connect/REG_Files_31_992> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_993> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_994> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_995> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_996> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_997> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_998> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_999> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1000> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1001> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1002> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1003> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1004> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1005> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1006> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1007> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1008> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1009> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1010> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1011> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1012> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1013> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1014> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1015> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1016> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1017> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1018> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1019> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1020> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1021> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1022> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <test_cpu/R_connect/REG_Files_31_1023> has a constant value of 0 in block <Top_LED>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top_LED, actual ratio is 29.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 998
+ Flip-Flops                                            : 998
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top_LED.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2258
+#      GND                         : 2
+#      INV                         : 2
+#      LUT2                        : 66
+#      LUT3                        : 724
+#      LUT4                        : 50
+#      LUT5                        : 117
+#      LUT6                        : 1070
+#      MUXCY                       : 82
+#      MUXF7                       : 78
+#      VCC                         : 2
+#      XORCY                       : 65
+# FlipFlops/Latches                : 998
+#      FDC                         : 6
+#      FDCE                        : 992
+# RAMS                             : 1
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 4
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             998  out of  18224     5%  
+ Number of Slice LUTs:                 2029  out of   9112    22%  
+    Number used as Logic:              2029  out of   9112    22%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2029
+   Number with an unused Flip Flop:    1031  out of   2029    50%  
+   Number with an unused LUT:             0  out of   2029     0%  
+   Number of fully used LUT-FF pairs:   998  out of   2029    49%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 999   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 22.535ns (Maximum Frequency: 44.375MHz)
+   Minimum input arrival time before clock: 3.858ns
+   Maximum output required time after clock: 17.093ns
+   Maximum combinational path delay: 8.822ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 22.535ns (frequency: 44.375MHz)
+  Total number of paths / destination ports: 9491923 / 2002
+-------------------------------------------------------------------------
+Delay:               11.268ns (Levels of Logic = 9)
+  Source:            test_cpu/pc_connect/Inst_ROM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (RAM)
+  Destination:       test_cpu/R_connect/REG_Files_31_978 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk falling
+
+  Data Path: test_cpu/pc_connect/Inst_ROM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram to test_cpu/R_connect/REG_Files_31_978
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB8BWER:CLKBRDCLK->DOBDO5  256   1.850   2.171  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (douta<21>)
+     end scope: 'test_cpu/pc_connect/Inst_ROM1:douta<21>'
+     LUT6:I4->O            1   0.203   0.827  test_cpu/R_connect/Mmux_R_Data_A_834 (test_cpu/R_connect/Mmux_R_Data_A_834)
+     LUT6:I2->O            1   0.203   0.000  test_cpu/R_connect/Mmux_R_Data_A_311 (test_cpu/R_connect/Mmux_R_Data_A_311)
+     MUXF7:I1->O          46   0.140   1.595  test_cpu/R_connect/Mmux_R_Data_A_2_f7_10 (test_cpu/R_Data_A<1>)
+     LUT6:I4->O            4   0.203   0.931  test_cpu/ALU_connect/Sh181 (test_cpu/ALU_connect/Sh18)
+     LUT6:I2->O            1   0.203   0.580  test_cpu/ALU_connect/Mmux_F92 (test_cpu/ALU_connect/Mmux_F91)
+     LUT5:I4->O            2   0.205   0.617  test_cpu/ALU_connect/Mmux_F93 (test_cpu/ALU_connect/Mmux_F92)
+     LUT6:I5->O           17   0.205   1.028  test_cpu/ALU_connect/Mmux_F95 (ALU_F<18>)
+     LUT3:I2->O            1   0.205   0.000  test_cpu/R_connect/Mmux_REG_Files[1][31]_W_Data[31]_mux_34_OUT101 (test_cpu/R_connect/REG_Files[1][31]_W_Data[31]_mux_34_OUT<18>)
+     FDCE:D                    0.102          test_cpu/R_connect/REG_Files_31_978
+    ----------------------------------------
+    Total                     11.268ns (3.519ns logic, 7.749ns route)
+                                       (31.2% logic, 68.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 998 / 998
+-------------------------------------------------------------------------
+Offset:              3.858ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       test_cpu/pc_connect/PC_7 (FF)
+  Destination Clock: clk falling
+
+  Data Path: rst to test_cpu/pc_connect/PC_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           998   1.222   2.206  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.430          test_cpu/pc_connect/PC_2
+    ----------------------------------------
+    Total                      3.858ns (1.652ns logic, 2.206ns route)
+                                       (42.8% logic, 57.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 631422 / 8
+-------------------------------------------------------------------------
+Offset:              17.093ns (Levels of Logic = 19)
+  Source:            test_cpu/pc_connect/Inst_ROM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (RAM)
+  Destination:       LED<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: test_cpu/pc_connect/Inst_ROM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram to LED<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB8BWER:CLKBRDCLK->DOBDO5  256   1.850   2.171  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (douta<21>)
+     end scope: 'test_cpu/pc_connect/Inst_ROM1:douta<21>'
+     LUT6:I4->O            1   0.203   0.827  test_cpu/R_connect/Mmux_R_Data_A_81 (test_cpu/R_connect/Mmux_R_Data_A_81)
+     LUT6:I2->O            1   0.203   0.000  test_cpu/R_connect/Mmux_R_Data_A_3 (test_cpu/R_connect/Mmux_R_Data_A_3)
+     MUXF7:I1->O          52   0.140   1.561  test_cpu/R_connect/Mmux_R_Data_A_2_f7 (test_cpu/R_Data_A<0>)
+     LUT2:I1->O            1   0.205   0.000  test_cpu/ALU_connect/Madd_n0033_lut<0>1 (test_cpu/ALU_connect/Madd_n0033_lut<0>1)
+     MUXCY:S->O            1   0.172   0.000  test_cpu/ALU_connect/Madd_n0033_cy<0> (test_cpu/ALU_connect/Madd_n0033_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  test_cpu/ALU_connect/Madd_n0033_cy<1> (test_cpu/ALU_connect/Madd_n0033_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  test_cpu/ALU_connect/Madd_n0033_cy<2> (test_cpu/ALU_connect/Madd_n0033_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  test_cpu/ALU_connect/Madd_n0033_cy<3> (test_cpu/ALU_connect/Madd_n0033_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  test_cpu/ALU_connect/Madd_n0033_cy<4> (test_cpu/ALU_connect/Madd_n0033_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  test_cpu/ALU_connect/Madd_n0033_cy<5> (test_cpu/ALU_connect/Madd_n0033_cy<5>)
+     XORCY:CI->O           1   0.180   0.684  test_cpu/ALU_connect/Madd_n0033_xor<6> (test_cpu/ALU_connect/n0033<6>)
+     LUT6:I4->O            1   0.203   0.580  test_cpu/ALU_connect/Mmux_F282 (test_cpu/ALU_connect/Mmux_F281)
+     LUT6:I5->O           33   0.205   1.534  test_cpu/ALU_connect/Mmux_F283 (ALU_F<6>)
+     LUT6:I3->O            1   0.205   0.580  Mmux_LED13 (Mmux_LED12)
+     LUT4:I3->O            1   0.205   0.808  Mmux_LED14 (Mmux_LED13)
+     LUT6:I3->O            1   0.205   0.924  Mmux_LED15 (Mmux_LED14)
+     LUT6:I1->O            1   0.203   0.579  Mmux_LED19 (LED_0_OBUF)
+     OBUF:I->O                 2.571          LED_0_OBUF (LED<0>)
+    ----------------------------------------
+    Total                     17.093ns (6.845ns logic, 10.248ns route)
+                                       (40.0% logic, 60.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 35 / 8
+-------------------------------------------------------------------------
+Delay:               8.822ns (Levels of Logic = 6)
+  Source:            SW<1> (PAD)
+  Destination:       LED<0> (PAD)
+
+  Data Path: SW<1> to LED<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.222   1.322  SW_1_IBUF (SW_1_IBUF)
+     LUT6:I0->O            1   0.203   0.580  Mmux_LED13 (Mmux_LED12)
+     LUT4:I3->O            1   0.205   0.808  Mmux_LED14 (Mmux_LED13)
+     LUT6:I3->O            1   0.205   0.924  Mmux_LED15 (Mmux_LED14)
+     LUT6:I1->O            1   0.203   0.579  Mmux_LED19 (LED_0_OBUF)
+     OBUF:I->O                 2.571          LED_0_OBUF (LED<0>)
+    ----------------------------------------
+    Total                      8.822ns (4.609ns logic, 4.213ns route)
+                                       (52.2% logic, 47.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |    1.599|   11.268|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.41 secs
+ 
+--> 
+
+Total memory usage is 310892 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   36 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

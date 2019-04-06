@@ -1,0 +1,131 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri May 04 22:07:33 2018
+# Process ID: 2880
+# Log file: D:/FPGA/ALU_design/planAhead_run_2/planAhead.log
+# Journal file: D:/FPGA/ALU_design/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from E:/ise/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/FPGA/ALU_design/pa.fromHdl.tcl
+# create_project -name ALU_design -dir "D:/FPGA/ALU_design/planAhead_run_2" -part xc6slx16csg324-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "ALU_TOP.ucf" [current_fileset -constrset]
+Adding file 'D:/FPGA/ALU_design/ALU_TOP.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {OP.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {LED_choice.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {data_test.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ALU_TOP.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top ALU_TOP $srcset
+# add_files [list {ALU_TOP.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/FPGA/ALU_design/OP.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU_design/LED_choice.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU_design/data_test.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU_design/ALU_TOP.v" into library work
+Loading clock regions from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from E:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : E:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/FPGA/ALU_design/ALU_TOP.ucf]
+Finished Parsing UCF File [D:/FPGA/ALU_design/ALU_TOP.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: e9ef4fc8
+open_rtl_design: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 675.996 ; gain = 184.141
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin U16 [get_ports {LED[7]}]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports {LED[6]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {LED[5]}]
+endgroup
+startgroup
+set_property package_pin V15 [get_ports {LED[4]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {LED[3]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {LED[2]}]
+endgroup
+startgroup
+set_property package_pin R11 [get_ports {LED[1]}]
+endgroup
+startgroup
+set_property package_pin T11 [get_ports {LED[0]}]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports {AB_SW[2]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {AB_SW[1]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {AB_SW[0]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {ALU_OP[2]}]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports {ALU_OP[1]}]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports {ALU_OP[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {F_LED_SW[2]}]]
+set_property package_pin "" [get_ports [list  {F_LED_SW[2]}]]
+set_property package_pin "" [get_ports [list  {F_LED_SW[2]}]]
+startgroup
+set_property package_pin U8 [get_ports {ALU_OP[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {F_LED_SW[2]}]]
+startgroup
+set_property package_pin U8 [get_ports {ALU_OP[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {F_LED_SW[0]}]]
+set_property package_pin "" [get_ports [list  {F_LED_SW[1]}]]
+set_property package_pin "" [get_ports [list  {F_LED_SW[2]}]]
+startgroup
+set_property package_pin V8 [get_ports {F_LED_SW[1]}]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports {F_LED_SW[0]}]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports {F_LED_SW[2]}]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See D:/FPGA/ALU_design\planAhead_pid2880.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri May 04 22:25:36 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

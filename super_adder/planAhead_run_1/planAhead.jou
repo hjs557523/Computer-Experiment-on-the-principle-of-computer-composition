@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri May 04 21:40:18 2018
+# Process ID: 8532
+# Log file: D:/FPGA/super_adder/planAhead_run_1/planAhead.log
+# Journal file: D:/FPGA/super_adder/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/FPGA/super_adder/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin T10 [get_ports {A[3]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {A[2]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {A[1]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {A[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {B[0]}]]
+startgroup
+set_property package_pin N8 [get_ports {B[3]}]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports {B[2]}]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports {B[1]}]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports {B[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  Ci]]
+startgroup
+set_property package_pin C4 [get_ports Ci]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports {F[3]}]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports {F[2]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {F[1]}]
+endgroup
+startgroup
+set_property package_pin V15 [get_ports {F[0]}]
+endgroup
+startgroup
+set_property package_pin T11 [get_ports {Co[4]}]
+endgroup
+set_property package_pin "" [get_ports [list  {Co[3]}]]
+set_property package_pin "" [get_ports [list  {Co[2]}]]
+startgroup
+set_property package_pin T11 [get_ports {Co[4]}]
+endgroup
+set_property package_pin "" [get_ports [list  {Co[3]}]]
+startgroup
+set_property package_pin R11 [get_ports {Co[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {Co[1]}]]
+startgroup
+set_property package_pin V16 [get_ports {F[2]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {Co[2]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {Co[1]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {F[1]}]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports {F[2]}]
+endgroup
+save_constraints

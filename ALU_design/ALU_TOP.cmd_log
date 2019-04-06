@@ -1,0 +1,39 @@
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_TOP.ucf -p xc6slx16-csg324-3 ALU_TOP.ngc ALU_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_TOP_map.ncd ALU_TOP.ngd ALU_TOP.pcf 
+par -w -intstyle ise -ol high -mt off ALU_TOP_map.ncd ALU_TOP.ncd ALU_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALU_TOP.twx ALU_TOP.ncd -o ALU_TOP.twr ALU_TOP.pcf -ucf ALU_TOP.ucf 
+bitgen -intstyle ise -f ALU_TOP.ut ALU_TOP.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_TOP.ucf -p xc6slx16-csg324-3 ALU_TOP.ngc ALU_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_TOP_map.ncd ALU_TOP.ngd ALU_TOP.pcf 
+par -w -intstyle ise -ol high -mt off ALU_TOP_map.ncd ALU_TOP.ncd ALU_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALU_TOP.twx ALU_TOP.ncd -o ALU_TOP.twr ALU_TOP.pcf -ucf ALU_TOP.ucf 
+bitgen -intstyle ise -f ALU_TOP.ut ALU_TOP.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_TOP.ucf -p xc6slx16-csg324-3 ALU_TOP.ngc ALU_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_TOP_map.ncd ALU_TOP.ngd ALU_TOP.pcf 
+par -w -intstyle ise -ol high -mt off ALU_TOP_map.ncd ALU_TOP.ncd ALU_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALU_TOP.twx ALU_TOP.ncd -o ALU_TOP.twr ALU_TOP.pcf -ucf ALU_TOP.ucf 
+bitgen -intstyle ise -f ALU_TOP.ut ALU_TOP.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_TOP.ucf -p xc6slx16-csg324-3 ALU_TOP.ngc ALU_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_TOP_map.ncd ALU_TOP.ngd ALU_TOP.pcf 
+par -w -intstyle ise -ol high -mt off ALU_TOP_map.ncd ALU_TOP.ncd ALU_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALU_TOP.twx ALU_TOP.ncd -o ALU_TOP.twr ALU_TOP.pcf -ucf ALU_TOP.ucf 
+bitgen -intstyle ise -f ALU_TOP.ut ALU_TOP.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_TOP.ucf -p xc6slx16-csg324-3 ALU_TOP.ngc ALU_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_TOP_map.ncd ALU_TOP.ngd ALU_TOP.pcf 
+par -w -intstyle ise -ol high -mt off ALU_TOP_map.ncd ALU_TOP.ncd ALU_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALU_TOP.twx ALU_TOP.ncd -o ALU_TOP.twr ALU_TOP.pcf -ucf ALU_TOP.ucf 
+bitgen -intstyle ise -f ALU_TOP.ut ALU_TOP.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU_design/ALU_TOP.xst" -ofn "D:/FPGA/ALU_design/ALU_TOP.syr" 

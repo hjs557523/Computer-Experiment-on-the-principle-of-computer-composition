@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "D:/FPGA/RAM_B/top_RAM_B.xst" -ofn "D:/FPGA/RAM_B/top_RAM_B.syr" 
+xst -intstyle ise -ifn "D:/FPGA/RAM_B/top_RAM_B.xst" -ofn "D:/FPGA/RAM_B/top_RAM_B.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_RAM_B.ucf -p xc6slx16-csg324-3 top_RAM_B.ngc top_RAM_B.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_RAM_B_map.ncd top_RAM_B.ngd top_RAM_B.pcf 
+par -w -intstyle ise -ol high -mt off top_RAM_B_map.ncd top_RAM_B.ncd top_RAM_B.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_RAM_B.twx top_RAM_B.ncd -o top_RAM_B.twr top_RAM_B.pcf -ucf top_RAM_B.ucf 
+bitgen -intstyle ise -f top_RAM_B.ut top_RAM_B.ncd 
+bitgen -intstyle ise -f top_RAM_B.ut top_RAM_B.ncd 
+xst -intstyle ise -ifn "D:/FPGA/RAM_B/top_RAM_B.xst" -ofn "D:/FPGA/RAM_B/top_RAM_B.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_RAM_B.ucf -p xc6slx16-csg324-3 top_RAM_B.ngc top_RAM_B.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_RAM_B_map.ncd top_RAM_B.ngd top_RAM_B.pcf 
+par -w -intstyle ise -ol high -mt off top_RAM_B_map.ncd top_RAM_B.ncd top_RAM_B.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_RAM_B.twx top_RAM_B.ncd -o top_RAM_B.twr top_RAM_B.pcf -ucf top_RAM_B.ucf 
+bitgen -intstyle ise -f top_RAM_B.ut top_RAM_B.ncd 
+bitgen -intstyle ise -f top_RAM_B.ut top_RAM_B.ncd 
+xst -intstyle ise -ifn "D:/FPGA/RAM_B/top_RAM_B.xst" -ofn "D:/FPGA/RAM_B/top_RAM_B.syr" 

@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "D:/FPGA/Registerfile_design/Top_Register_file.xst" -ofn "D:/FPGA/Registerfile_design/Top_Register_file.syr" 
+xst -intstyle ise -ifn "D:/FPGA/Registerfile_design/Top_Register_file.xst" -ofn "D:/FPGA/Registerfile_design/Top_Register_file.syr" 
+xst -intstyle ise -ifn "D:/FPGA/Registerfile_design/Top_Register_file.xst" -ofn "D:/FPGA/Registerfile_design/Top_Register_file.syr" 
+xst -intstyle ise -ifn "D:/FPGA/Registerfile_design/Top_Register_file.xst" -ofn "D:/FPGA/Registerfile_design/Top_Register_file.syr" 
+xst -intstyle ise -ifn "D:/FPGA/Registerfile_design/Top_Register_file.xst" -ofn "D:/FPGA/Registerfile_design/Top_Register_file.syr" 
+xst -intstyle ise -ifn "D:/FPGA/Registerfile_design/Top_Register_file.xst" -ofn "D:/FPGA/Registerfile_design/Top_Register_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_Register_file.ucf -p xc6slx16-csg324-3 Top_Register_file.ngc Top_Register_file.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Register_file_map.ncd Top_Register_file.ngd Top_Register_file.pcf 
+par -w -intstyle ise -ol high -mt off Top_Register_file_map.ncd Top_Register_file.ncd Top_Register_file.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Top_Register_file.twx Top_Register_file.ncd -o Top_Register_file.twr Top_Register_file.pcf -ucf Top_Register_file.ucf 
+bitgen -intstyle ise -f Top_Register_file.ut Top_Register_file.ncd 
+xst -intstyle ise -ifn "D:/FPGA/Registerfile_design/Top_Register_file.xst" -ofn "D:/FPGA/Registerfile_design/Top_Register_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_Register_file.ucf -p xc6slx16-csg324-3 Top_Register_file.ngc Top_Register_file.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Register_file_map.ncd Top_Register_file.ngd Top_Register_file.pcf 
+par -w -intstyle ise -ol high -mt off Top_Register_file_map.ncd Top_Register_file.ncd Top_Register_file.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Top_Register_file.twx Top_Register_file.ncd -o Top_Register_file.twr Top_Register_file.pcf -ucf Top_Register_file.ucf 
+bitgen -intstyle ise -f Top_Register_file.ut Top_Register_file.ncd 
+xst -intstyle ise -ifn "D:/FPGA/Registerfile_design/Top_Register_file.xst" -ofn "D:/FPGA/Registerfile_design/Top_Register_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_Register_file.ucf -p xc6slx16-csg324-3 Top_Register_file.ngc Top_Register_file.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Register_file_map.ncd Top_Register_file.ngd Top_Register_file.pcf 
+par -w -intstyle ise -ol high -mt off Top_Register_file_map.ncd Top_Register_file.ncd Top_Register_file.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Top_Register_file.twx Top_Register_file.ncd -o Top_Register_file.twr Top_Register_file.pcf -ucf Top_Register_file.ucf 

@@ -1,0 +1,128 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat May 12 10:10:38 2018
+# Process ID: 7208
+# Log file: D:/FPGA/RAM_B/planAhead_run_2/planAhead.log
+# Journal file: D:/FPGA/RAM_B/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from E:/ise/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/FPGA/RAM_B/pa.fromHdl.tcl
+# create_project -name RAM_B -dir "D:/FPGA/RAM_B/planAhead_run_2" -part xc6slx16csg324-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "top_RAM_B.ucf" [current_fileset -constrset]
+Adding file 'D:/FPGA/RAM_B/top_RAM_B.ucf' to fileset 'constrs_1'
+# add_files [list {ipcore_dir/RAM_B.ngc}]
+# set hdlfile [add_files [list {ipcore_dir/RAM_B.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {top_RAM_B.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top top_RAM_B $srcset
+# add_files [list {top_RAM_B.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/RAM_B.ncf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "E:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/FPGA/RAM_B/ipcore_dir/RAM_B.v" into library work
+Analyzing Verilog file "D:/FPGA/RAM_B/top_RAM_B.v" into library work
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design RAM_B.ngc ...
+WARNING:NetListWriters:298 - No output is written to RAM_B.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file RAM_B.edif ...
+ngc2edif: Total memory usage is 81056 kilobytes
+
+Reading core file 'D:/FPGA/RAM_B/ipcore_dir/RAM_B.ngc' for (cell view 'RAM_B', library 'work', file 'RAM_B.v')
+Parsing EDIF File [./.Xil/PlanAhead-7208-DESKTOP-1D0KGCK/ngc2edif/RAM_B.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-7208-DESKTOP-1D0KGCK/ngc2edif/RAM_B.edif]
+Loading clock regions from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from E:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from E:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : E:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/FPGA/RAM_B/top_RAM_B.ucf]
+Finished Parsing UCF File [D:/FPGA/RAM_B/top_RAM_B.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 726d90e8
+open_rtl_design: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 644.313 ; gain = 199.559
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {LED[6]}]]
+set_property package_pin "" [get_ports [list  {LED[7]}]]
+set_property package_pin "" [get_ports [list  {LED[5]}]]
+set_property package_pin "" [get_ports [list  {LED[4]}]]
+set_property package_pin "" [get_ports [list  {LED[3]}]]
+set_property package_pin "" [get_ports [list  {LED[2]}]]
+set_property package_pin "" [get_ports [list  {LED[1]}]]
+set_property package_pin "" [get_ports [list  {LED[0]}]]
+set_property package_pin "" [get_ports [list  {Mem_Addr[7]}]]
+set_property package_pin "" [get_ports [list  {Mem_Addr[6]}]]
+set_property package_pin "" [get_ports [list  {Mem_Addr[5]}]]
+set_property package_pin "" [get_ports [list  {Mem_Addr[4]}]]
+set_property package_pin "" [get_ports [list  {Mem_Addr[3]}]]
+set_property package_pin "" [get_ports [list  {Mem_Addr[2]}]]
+set_property package_pin "" [get_ports [list  {Mem_Addr[4]}]]
+set_property package_pin "" [get_ports [list  Clk]]
+set_property package_pin "" [get_ports [list  Mem_Write]]
+set_property package_pin "" [get_ports [list  {C[1]}]]
+set_property package_pin "" [get_ports [list  {C[0]}]]
+set_property package_pin "" [get_ports [list  {LED[6]}]]
+set_property package_pin "" [get_ports [list  {C[1]}]]
+set_property package_pin "" [get_ports [list  {LED[7]}]]
+startgroup
+set_property package_pin T11 [get_ports {LED[7]}]
+endgroup
+startgroup
+set_property package_pin R11 [get_ports {LED[6]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {LED[5]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {LED[4]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {LED[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {LED[2]}]]
+startgroup
+set_property package_pin V15 [get_ports {LED[3]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {LED[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {LED[1]}]]
+startgroup
+set_property package_pin M11 [get_ports {LED[4]}]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports {LED[1]}]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports {LED[0]}]
+endgroup
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See D:/FPGA/RAM_B\planAhead_pid7208.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat May 12 10:18:44 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,24 @@
+
+
+NET "Clk" LOC = C9;
+NET "Reset" LOC = D9;
+NET "Write_Reg" LOC = T5;
+NET "C2" LOC = C4;
+
+# PlanAhead Generated physical constraints 
+
+NET "LED[7]" LOC = T11;
+NET "LED[6]" LOC = R11;
+NET "LED[4]" LOC = M11;
+NET "LED[3]" LOC = V15;
+NET "LED[1]" LOC = V16;
+NET "LED[0]" LOC = U16;
+NET "LED[2]" LOC = U15;
+NET "LED[5]" LOC = N11;
+NET "Addr[0]" LOC = T10;
+NET "Addr[2]" LOC = V9;
+NET "Addr[3]" LOC = M8;
+NET "Addr[4]" LOC = N8;
+NET "C1[0]" LOC = U8;
+NET "C1[1]" LOC = V8;
+NET "Addr[1]" LOC = T9;

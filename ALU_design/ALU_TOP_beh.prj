@@ -1,0 +1,5 @@
+verilog work "OP.v"
+verilog work "LED_choice.v"
+verilog work "data_test.v"
+verilog work "ALU_TOP.v"
+verilog work "E:/ise/14.7/ISE_DS/ISE//verilog/src/glbl.v"
